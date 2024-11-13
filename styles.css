@@ -73,20 +73,8 @@ body::before {
   margin-bottom: 1rem;
 }
 
-/* Estilo del cuadro de entrada */
-#pokemon-input {
-  padding: 0.7rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  width: 80%;
-  max-width: 300px;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
 /* Estilo del botón de búsqueda */
-#search-btn {
+.buscar {
   padding: 0.7rem 1.2rem;
   font-size: 1rem;
   color: #000;
@@ -97,7 +85,7 @@ body::before {
   transition: background-color 0.3s ease;
 }
 
-#search-btn:hover {
+.buscar:hover {
   background-color: #ff6347;
 }
 
@@ -129,7 +117,7 @@ body::before {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .collection-item {
@@ -167,9 +155,10 @@ button {
 }
 
 .btn-style {
+  display: block;
   padding: 0.7rem 1.2rem;
   font-size: 1rem;
-  margin-top: 1rem;
+  margin: 1rem auto;
   color: #000000;
   background-color: #00f7ff;
   border: none;
@@ -180,4 +169,34 @@ button {
 
 .btn-style:hover {
   background-color: #ff6347;
+}
+
+#pokemon-data {
+  text-align: center;
+}
+
+#imgPokemon {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+#pokemonColeccion {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
+  border-radius: 8px;
+  width: 100px;
+  display: block;
+}
+
+.btn-buscar {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  color: #333;
 }
